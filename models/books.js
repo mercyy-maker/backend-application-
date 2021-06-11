@@ -3,11 +3,12 @@ const mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let BookSchema = new Schema({
-    bookName: String,
-    authorName: String,
-    isbn: String,
-    bookPrice: Number,
+    title: String,
+    description: String,
+    year: Number,
+    author: String,
+    price: Number,
 });
 
-module.exports = mongoose.model('Books', BookSchema);
+module.exports = mongoose.model('Book', BookSchema);
 
